@@ -23,7 +23,6 @@ const sendResetPasswordEmail = (email, username, code) => {
     html: `
     <div>
     <h3>${username}. El código para reestablecer tu contraseña es: ${code}.</h3>
-    <a href="${mailStr}">Visit W3Schools.com!</a>
     <a clicktracking="off" href="${mailStr}">Haz click aquí para reestablecer tu contraseña.</a>
     </div>
     `,
