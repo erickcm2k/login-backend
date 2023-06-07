@@ -1,7 +1,6 @@
 "use strict";
 
 const express = require("express");
-const bcrypt = require("bcryptjs");
 
 require("./db/mongoose");
 require("dotenv").config();
