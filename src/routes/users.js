@@ -6,7 +6,6 @@ const userSchema = require("../models/user");
 const { verifyToken, generateAccessToken } = require("../middleware/jwt");
 const { sendWelcomeEmail, sendResetPasswordEmail } = require("../email/mail");
 const generateRandomString = require("../utils/generateRandomString");
-const user = require("../models/user");
 
 // Crear usuario y enviar mail de bienvenida
 router.post("/users/signup", async (req, res) => {
