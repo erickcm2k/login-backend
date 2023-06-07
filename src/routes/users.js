@@ -12,6 +12,12 @@ const user = require("../models/user");
 router.post("/users/signup", async (req, res) => {
   try {
     const { username, email, password } = req.body;
+    console.log(`
+    USERNAME ${username}
+    EMAIL ${email}
+    PASSWORD ${password}
+    
+    `);
     const usr = await userSchema.findOne({ email });
     if (usr) {
       return res.status(409).send({
